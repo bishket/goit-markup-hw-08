@@ -1,0 +1,37 @@
+.features {
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        width: 270px;
+    }
+
+    &__box {
+        height: 120px;
+        background: var(--background-button);
+        border-radius: 4px;
+        margin-bottom: 30px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &__subtitle {
+        font-size: 14px;
+        color: var(--title-color);
+        line-height: 1.14;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        line-height: 1.7;
+        width: 270px;
+    }
+}

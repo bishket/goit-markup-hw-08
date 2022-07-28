@@ -1,0 +1,19 @@
+
+.button {
+    display: inline-block;
+
+    cursor: pointer;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    background-color: var(--button-hover-color);
+    color: var(--background-basic);
+
+    border: none;
+    padding: 10px 32px;
+    border-radius: 4px;
+
+    transition: background-color var(--timing-function);
+}

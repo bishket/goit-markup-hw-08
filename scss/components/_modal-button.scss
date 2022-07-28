@@ -1,0 +1,33 @@
+.modal-button {
+    position: absolute;
+    display: flex;
+
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    top: 8px;
+    right: 8px;
+
+    border-radius: 50%;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    opacity: 1;
+    transition: opacity var(--timing-function);
+
+    &__icon {
+        width: 11px;
+        height: 11px;
+        transition: fill var(--timing-function);
+
+        .modal-button:hover &,
+        .modal-button:focus & {
+            fill: var(--accent-color);
+        }
+
+    }
+
+
+}

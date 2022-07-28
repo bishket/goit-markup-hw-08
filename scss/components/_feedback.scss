@@ -1,0 +1,22 @@
+.feedback {
+    margin-bottom: 20px;
+
+    &__form-fild {
+        width: 100%;
+        height: 120px;
+        padding: 12px;
+        font-family: inherit;
+        resize: none;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        transition: border var(--timing-function);
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+    }
+
+    &__form-fild:focus {
+        border: 1px solid var(--accent-color);
+        outline: none;
+    }
+}

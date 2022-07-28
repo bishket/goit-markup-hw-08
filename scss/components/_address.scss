@@ -1,0 +1,25 @@
+.address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+
+    &__link {
+        color: var(--adress-color);
+        transition: color var(--timing-function);
+    }
+
+    &-link__white {
+        color: var(--background-basic);
+    }
+
+    &__link:hover,
+    &__link:focus {
+        color: var(--accent-color);
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+
+}
