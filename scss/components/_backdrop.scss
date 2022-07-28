@@ -6,6 +6,7 @@
     height: 100%;
     z-index: 3;
 
+    overflow-y: scroll;
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
     transition: opacity var(--timing-function), visibility var(--timing-function);
