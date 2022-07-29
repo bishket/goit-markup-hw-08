@@ -1,6 +1,12 @@
 .preview {
     padding-top: 0;
 
+        display: none;
+
+        @media (min-width:768px) {
+        display: block;         
+       }
+       
     &__title {
         margin-bottom: 50px;
     }

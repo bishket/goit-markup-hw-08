@@ -4,6 +4,10 @@
     font-size: 14px;
     line-height: 1.7;
 
+    @media (max-width: 1199px){
+            margin-bottom: 60px;
+        }
+
     &__link {
         color: var(--adress-color);
         transition: color var(--timing-function);

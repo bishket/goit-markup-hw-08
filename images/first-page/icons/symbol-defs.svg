@@ -81,6 +81,9 @@
 <symbol id="icon-border-check" viewBox="0 0 32 32">
 <path d="M28.44 4.34v23.32h-24.88v-23.32h24.88zM28.44 1h-24.88c-1.96 0-3.56 1.5-3.56 3.34v23.32c0 1.84 1.6 3.34 3.56 3.34h24.88c1.96 0 3.56-1.5 3.56-3.34v-23.32c0-1.84-1.6-3.34-3.56-3.34z"></path>
 </symbol>
+<symbol id="icon-burger-menu" viewBox="0 0 48 32">
+<path d="M0 5.34v-5.34h48v5.34h-48zM0 18.66h48v-5.32h-48v5.32zM0 32h48v-5.34h-48v5.34z"></path>
+</symbol>
 <symbol id="icon-icon-check" viewBox="0 0 42 32">
 <path fill="#fff" style="fill: var(--color1, #fff); stroke: var(--color1, #fff)" stroke="#fff" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.64" d="M6.272 15.2l-0.224-0.192-0.224 0.192-2.848 2.688-0.256 0.224 0.256 0.256 11.424 10.88 0.192-0.224 24.256-23.136-0.224-0.224-2.816-2.688-0.224-0.224-0.224 0.224-20.96 19.968-8.128-7.744z"></path>
 </symbol></defs>
