@@ -14,6 +14,15 @@
             border: 1px solid rgba(0, 0, 0, 0);
     }
 
+       &__button-menu-close{
+        width: 40px;
+            height: 40px;
+            padding: 0;
+            margin-left: auto;
+            background-color: var(--primary-white-color);
+            border: 1px solid rgba(0, 0, 0, 0);
+       }
+
     &_desktop-menu{
         display: none;
         @media (min-width:768px) {
