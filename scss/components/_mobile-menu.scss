@@ -11,6 +11,10 @@
 
   transform: translateX(100%);
 
+  &__nav-list .mobile-menu__current {
+    color: var(--accent-color);
+  }
+
   &.is-open {
     transform: translateX(0);
   }
