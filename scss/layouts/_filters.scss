@@ -1,50 +1,53 @@
 .filters {
-    &__list {
-        margin-bottom: 50px;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    @media (min-width: 768px) {
+      justify-content: center;
+      margin-bottom: 50px;
     }
+  }
 
-    &__button {
-        display: inline-block;
-        cursor: pointer;
-        color: var(--title-color);
-        background-color: var(--background-button);
+  &__button {
+    display: inline-block;
+    cursor: pointer;
+    color: var(--title-color);
+    background-color: var(--background-button);
 
-        font-family: inherit;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.6;
-        text-align: center;
-        letter-spacing: 0.03em;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
 
-        border: none;
-        padding: 6px 22px;
+    border: none;
+    padding: 6px 22px;
 
-        transition: color var(--timing-function), background-color var(--timing-function),
-            box-shadow var(--timing-function);
-    }
+    transition: color var(--timing-function), background-color var(--timing-function),
+      box-shadow var(--timing-function);
+  }
+  &__item {
+    margin-bottom: 15px;
+  }
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
 
-    &__list {
-        display: flex;
-        justify-content: center;
-    }
+  &__button:hover,
+  &__button:focus {
+    color: var(--background-basic);
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 
-    &__item:not(:last-child) {
-        margin-right: 8px;
-    }
-
-    &__button:hover,
-    &__button:focus {
-        color: var(--background-basic);
-        background-color: var(--accent-color);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    }
-
-    &__button.active {
-        color: var(--background-basic);
-        background-color: var(--accent-color);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        transition: color var(--timing-function), background-color var(--timing-function),
-            box-shadow var(--timing-function);
-    }
+  &__button.active {
+    color: var(--background-basic);
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: color var(--timing-function), background-color var(--timing-function),
+      box-shadow var(--timing-function);
+  }
 }

@@ -71,7 +71,7 @@
           </svg>
         </button>
 
-        <div class="menu-container mobile-menu js-menu-container" id="mobile-menu">
+        <div class="mobile-menu js-menu-container" id="mobile-menu">
           <button
             class="mobile-menu__close js-close-menu"
             aria-expanded="false"
@@ -83,24 +83,28 @@
           </button>
           <nav class="mobile-menu__nav">
             <ul class="list mobile-menu__nav-list">
-              <li>
+              <li class="mobile-menu__nav-item">
                 <a href="./index.html" class="link mobile-menu__nav-link mobile-menu__current"
                   >Студія</a
                 >
               </li>
-              <li><a href="./portfolio.html" class="link mobile-menu__nav-link">Портфоліо</a></li>
-              <li><a href="#contact" class="link mobile-menu__nav-link">Контакти</a></li>
+              <li class="mobile-menu__nav-item">
+                <a href="./portfolio.html" class="link mobile-menu__nav-link">Портфоліо</a>
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a href="#contact" class="link mobile-menu__nav-link">Контакти</a>
+              </li>
             </ul>
           </nav>
           <ul class="list mobile-menu__contacts">
             <li class="mobile-menu__contacts-item">
-              <a class="link mobile-menu__contacts-link" href="mailto:info@devstudio.com">
-                info@devstudio.com
+              <a class="link mobile-menu__contacts-link" href="tel:+380961111111">
+                <span class="mobile-menu__contacts-link--color">+38 096 111 11 11</span>
               </a>
             </li>
             <li class="mobile-menu__contacts-item">
-              <a class="link mobile-menu__contacts-link" href="tel:+380961111111">
-                +38 096 111 11 11
+              <a class="link mobile-menu__contacts-link" href="mailto:info@devstudio.com">
+                info@devstudio.com
               </a>
             </li>
           </ul>
@@ -566,12 +570,11 @@
               ></textarea>
             </div>
             <div class="checkbox">
-              <input class="checkbox__input" id="checkbox" type="checkbox" name="checkbox" />
-              <svg class="checkbox__icon" aria-hidden="true">
-                <use href="./images/first-page/icons/symbol-defs.svg#icon-icon-check"></use>
-              </svg>
-
               <label class="checkbox__label" for="checkbox">
+                <input class="checkbox__input" id="checkbox" type="checkbox" name="checkbox" />
+                <svg class="checkbox__icon" aria-hidden="true">
+                  <use href="./images/first-page/icons/symbol-defs.svg#icon-icon-check"></use>
+                </svg>
                 Погоджуюся з розсилкою та приймаю
                 <a class="form-fild__link" href="#">Умови договору</a>
               </label>

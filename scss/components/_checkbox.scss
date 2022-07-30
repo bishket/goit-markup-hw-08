@@ -1,12 +1,22 @@
 .checkbox {
-    display: flex;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+
+
     margin-bottom: 30px;
     position: relative;
     justify-content: center;
 
+    &__label{
+        display:flex;
+    }
     &__icon {
-        display: inline-block;
+        // display: flex;
         margin-right: 8px;
+        cursor: pointer;
 
         width: 16px;
         height: 15px;
@@ -34,5 +44,6 @@
         padding: 0;
         clip: rect(0 0 0 0);
         overflow: hidden;
+        
     }
 }
