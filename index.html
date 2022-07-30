@@ -25,82 +25,100 @@
         <a href="./index.html" class="link site-nav__logo"
           ><span class="site-nav__color-logo">Web</span>Studio</a
         >
+
+        <div class="header_desktop-menu">
+          <nav class="site-nav">
+            <ul class="list site-nav__list">
+              <li class="site-nav__item">
+                <a href="./index.html" class="link site-nav__link site-nav__current">Студія</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="./portfolio.html" class="link site-nav__link">Портфоліо</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="#contact" class="link site-nav__link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="list contacts">
+            <li class="contacts__item">
+              <a class="link contacts__link" href="mailto:info@devstudio.com">
+                <svg class="contacts__icon-envelope" aria-hidden="true">
+                  <use href="./images/first-page/icons/symbol-defs.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a class="link contacts__link" href="tel:+380961111111">
+                <svg class="contacts__icon-smartphone" aria-hidden="true">
+                  <use href="./images/first-page/icons/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </div>
+
         <button
-          class="header__button-menu"
-          type="button"
+          class="header__menu-open js-open-menu"
           aria-expanded="false"
-          aria-controls="header_modile-menu"
-          data-modal-open
+          type="button"
+          aria-controls="mobile-menu"
         >
           <svg aria-hidden="true" width="24px" height="16px">
             <use href="./images/first-page/icons/symbol-defs.svg#icon-burger-menu"></use>
           </svg>
         </button>
 
-        <div class="header_modile-menu" id="header_modile-menu" data-menu>
+        <div class="menu-container mobile-menu js-menu-container" id="mobile-menu">
           <button
-            class="header__button-menu-close"
-            type="button"
+            class="mobile-menu__close js-close-menu"
             aria-expanded="false"
-            aria-controls="header_modile-menu"
-            data-modal-close
+            aria-controls="mobile-menu"
           >
             <svg aria-hidden="true" width="18.5px" height="18.5px">
               <use href="./images/first-page/icons/symbol-defs.svg#modal-button__icon"></use>
             </svg>
           </button>
-
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-
-          <ul>
-            <li></li>
-            <li></li>
-          </ul>
-
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-
-          <div class="header_desktop-menu">
-            <nav class="site-nav">
-              <ul class="list site-nav__list">
-                <li class="site-nav__item">
-                  <a href="./index.html" class="link site-nav__link site-nav__current">Студія</a>
-                </li>
-                <li class="site-nav__item">
-                  <a href="./portfolio.html" class="link site-nav__link">Портфоліо</a>
-                </li>
-                <li class="site-nav__item">
-                  <a href="#contact" class="link site-nav__link">Контакти</a>
-                </li>
-              </ul>
-            </nav>
-            <ul class="list contacts">
-              <li class="contacts__item">
-                <a class="link contacts__link" href="mailto:info@devstudio.com">
-                  <svg class="contacts__icon-envelope" aria-hidden="true">
-                    <use href="./images/first-page/icons/symbol-defs.svg#icon-envelope"></use>
-                  </svg>
-                  info@devstudio.com
-                </a>
+          <nav class="mobile-menu__nav">
+            <ul class="list mobile-menu__nav-list">
+              <li>
+                <a href="./index.html" class="link mobile-menu__nav-link mobile-menu__current"
+                  >Студія</a
+                >
               </li>
-              <li class="contacts__item">
-                <a class="link contacts__link" href="tel:+380961111111">
-                  <svg class="contacts__icon-smartphone" aria-hidden="true">
-                    <use href="./images/first-page/icons/symbol-defs.svg#icon-smartphone"></use>
-                  </svg>
-                  +38 096 111 11 11
-                </a>
-              </li>
+              <li><a href="./portfolio.html" class="link mobile-menu__nav-link">Портфоліо</a></li>
+              <li><a href="#contact" class="link mobile-menu__nav-link">Контакти</a></li>
             </ul>
-          </div>
+          </nav>
+          <ul class="list mobile-menu__contacts">
+            <li class="mobile-menu__contacts-item">
+              <a class="link mobile-menu__contacts-link" href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="mobile-menu__contacts-item">
+              <a class="link mobile-menu__contacts-link" href="tel:+380961111111">
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+
+          <ul class="list mobile-menu__social-list">
+            <li class="mobile-menu__social-item">
+              <a class="link mobile-menu__social-link" href="#">Instagram</a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a class="link mobile-menu__social-link" href="#">Twitter</a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a class="link mobile-menu__social-link" href="#">Facebook</a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a class="link mobile-menu__social-link" href="#">LinkedIn</a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
@@ -375,8 +393,9 @@
         </div>
       </section>
       <section class="section clients">
-        <h2 class="title clients__title">Постійні клієнти</h2>
         <div class="container">
+          <h2 class="title clients__title">Постійні клієнти</h2>
+
           <ul class="list clients__list">
             <li class="clients__item">
               <a href="#" class="clients__link">
@@ -564,6 +583,15 @@
         </div>
       </div>
     </div>
-    <script src="./modal.js"></script>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+
+    <script src="js/modal.js"></script>
   </body>
 </html>
