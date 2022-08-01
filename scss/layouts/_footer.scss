@@ -1,17 +1,21 @@
 .footer {
-    background-color: var(--background-secondary);
-    padding: 60px 0;
+  background-color: var(--background-secondary);
+  padding: 60px 0;
 
- 
+  &__container {
+    align-items: center;
 
-    &__container {
-        align-items: center;
-
-
-        @media (min-width:768px) {
-               display: flex;
-                align-items: baseline;
-                justify-content: space-between;
-            }
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-around;
+      flex-wrap: wrap;
     }
+
+    @media (min-width: 1199px) {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+  }
 }

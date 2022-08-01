@@ -1,41 +1,39 @@
 .hero {
-    text-align: center;
-    padding: 118px 60px;
-    background-color: var(--background-secondary);
+  text-align: center;
+  padding: 118px 60px;
+  background-color: var(--background-secondary);
 
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/first-page/header/header.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/first-page/header/header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
-    @media (min-width:768px) {
-        padding: 200px 0;
-        }
+  @media (min-width: 1199px) {
+    padding: 200px 0;
+  }
 
-    &__title {
-        color: var(--background-basic);
-                    margin: 0 auto 30px;
-        font-weight: 900;
-        font-size: 26px;
-            line-height: 42px;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
+  &__title {
+    color: var(--background-basic);
+    margin: 0 auto 30px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.6;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    width: 380px;
 
-        @media (min-width:768px) {
-                width: 696px;
-                    height: 120px;
-                    margin: 0 auto 30px;
-                    font-size: 44px;
-                        line-height: 1.5;
-            }
-        
-       
+    @media (min-width: 1199px) {
+      width: 696px;
+      height: 120px;
+      margin: 0 auto 30px;
+      font-size: 44px;
+      line-height: 1.5;
     }
+  }
 
-    & .button:hover,
-    & .button:focus {
-        background-color: var(--background-svg);
-    }
-
+  & .button:hover,
+  & .button:focus {
+    background-color: var(--background-svg);
+  }
 }

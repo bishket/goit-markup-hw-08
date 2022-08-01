@@ -8,8 +8,9 @@
     font-family: Raleway, cursive;
     font-size: 26px;
     line-height: 1.2;
-
-    margin-right: 93px;
+    @media (min-width: 1199px) {
+      margin-right: 93px;
+    }
   }
 
   &__color-logo {

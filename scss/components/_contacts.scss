@@ -1,5 +1,12 @@
 .contacts {
-  display: flex;
+  display: block;
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 96px;
+  }
 
   &__item:not(:last-child) {
     @media (min-width: 1199px) {
@@ -9,15 +16,20 @@
 
   &__link {
     font-weight: 500;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.02em;
 
-    display: flex;
-    align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
     transition: color var(--timing-function);
+
+    @media (min-width: 1199px) {
+      line-height: 1.14;
+
+      display: flex;
+      align-items: center;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
   }
 
   &__link:hover,
@@ -27,10 +39,15 @@
 
   &__icon-envelope {
     fill: var(--text-color);
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
+    width: 14px;
+    height: 10px;
+    margin-right: 8px;
     transition: fill var(--timing-function);
+    @media (min-width: 1199px) {
+      width: 16px;
+      height: 12px;
+      margin-right: 10px;
+    }
 
     .contacts__link:hover &,
     .contacts__link:focus & {
@@ -41,9 +58,13 @@
   &__icon-smartphone {
     fill: var(--text-color);
     width: 10px;
-    height: 16px;
-    margin-right: 10px;
+    height: 14px;
+    margin-right: 8px;
     transition: fill var(--timing-function);
+    @media (min-width: 1199px) {
+      height: 16px;
+      margin-right: 10px;
+    }
 
     .contacts__link:hover &,
     .contacts__link:focus & {
