@@ -9,7 +9,7 @@
     font-size: 26px;
     line-height: 1.2;
     @media (min-width: 1199px) {
-      margin-right: 93px;
+      margin-right: auto;
     }
   }
 
@@ -23,6 +23,9 @@
 
   &__list {
     display: flex;
+    @media (min-width: 1199px) {
+      margin-right: 315px;
+    }
   }
 
   &__item:not(:last-child) {

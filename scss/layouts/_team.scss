@@ -10,6 +10,10 @@
   }
 
   &__list {
+    @media (min-width: 1199px) {
+      display: flex;
+    }
+
     @media (min-width: 768px) and (max-width: 1199px) {
       margin: -15px;
       display: flex;
@@ -23,7 +27,6 @@
     }
     @media (min-width: 1199px) {
       width: 270px;
-      height: 260px;
     }
   }
 

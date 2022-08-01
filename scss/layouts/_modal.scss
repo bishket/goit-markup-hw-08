@@ -1,34 +1,34 @@
 .modal {
-    position: absolute;
-    width: 450px;
-    height: 609px;
-    background: #ffffff;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
+  position: absolute;
+  width: 450px;
+  height: 609px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-    opacity: 1;
-    transition: opacity var(--timing-function);
-    
-    @media (min-width:768px) {
-            width: 528px;
-                height: 581px;
-        }
+  opacity: 1;
+  transition: opacity var(--timing-function);
 
-    &__title {
-        margin-bottom: 12px;
-        font-style: normal;
-        font-size: 20px;
-        line-height: 1.15;
-        text-align: center;
-        color: var(--title-color);
-    }
+  @media (min-width: 1199px) {
+    width: 528px;
+    height: 581px;
+  }
 
-    &__inner {
-        padding: 40px 40px;
-    }
+  &__title {
+    margin-bottom: 12px;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    color: var(--title-color);
+  }
+
+  &__inner {
+    padding: 40px 40px;
+  }
 }
