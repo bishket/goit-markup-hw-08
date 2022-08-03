@@ -906,6 +906,16 @@ img {
   margin: 0;
   width: 100%;
 }
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
 @media (min-width: 1199px) {
   .container {
     width: 1200px;
@@ -932,6 +942,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media (max-width: 1199px) {
   .clients__list {
@@ -1164,11 +1177,41 @@ img {
   text-align: center;
   padding: 118px 60px;
   background-color: var(--background-secondary);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/first-page/header/header.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/first-page/header/header.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/first-page/header/header-480.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/first-page/header/header-480.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/first-page/header/header-480@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/first-page/header/header-480@2x.jpg);
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/first-page/header/header-768.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/first-page/header/header-768.jpg);
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/first-page/header/header-768@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/first-page/header/header-768@2x.jpg);
+  }
+}
+@media (min-width: 1199px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/first-page/header/header-1600.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/first-page/header/header-1600.jpg);
+  }
+}
+@media (min-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/first-page/header/header-1600@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/first-page/header/header-1600@2x.jpg);
+  }
 }
 @media (min-width: 1199px) {
   .hero {
@@ -1183,7 +1226,11 @@ img {
   line-height: 1.6;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  width: 380px;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .hero__title {
+    width: 380px;
+  }
 }
 @media (min-width: 1199px) {
   .hero__title {

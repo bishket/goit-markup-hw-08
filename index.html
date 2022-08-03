@@ -194,7 +194,10 @@
               <div class="preview__overlay">
                 <img
                   class="preview__image"
-                  srcset="./images/first-page/employment/box1@2x.jpg"
+                  srcset="
+                    ./images/first-page/employment/box1.jpg    1x,
+                    ./images/first-page/employment/box1@2x.jpg 2x
+                  "
                   src="./images/first-page/employment/box1.jpg"
                   alt="HTML"
                   width="370"
@@ -207,7 +210,10 @@
               <div class="preview__overlay">
                 <img
                   class="preview__image"
-                  srcset="./images/first-page/employment/box2@2x.jpg"
+                  srcset="
+                    ./images/first-page/employment/box2.jpg    1x,
+                    ./images/first-page/employment/box2@2x.jpg 2x
+                  "
                   src="./images/first-page/employment/box2.jpg"
                   alt="CSS"
                   width="370"
@@ -220,7 +226,10 @@
               <div class="preview__overlay">
                 <img
                   class="preview__image"
-                  srcset="./images/first-page/employment/box3@2x.jpg"
+                  srcset="
+                    ./images/first-page/employment/box3.jpg    1x,
+                    ./images/first-page/employment/box3@2x.jpg 2x
+                  "
                   src="./images/first-page/employment/box3.jpg"
                   alt="JavaScript"
                   width="370"
@@ -237,11 +246,31 @@
           <h2 class="title team__title">Наша команда</h2>
           <ul class="list team__list">
             <li class="team__item">
-              <img
-                class="team__image"
-                src="./images/first-page/team/img1.jpg"
-                alt="Ігор Дем'яненко"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/first-page/team/igor-demianenko/igor-dem-1600.jpg    1x,
+                    ./images/first-page/team/igor-demianenko/igor-dem-1600@2x.jpg 2x
+                  "
+                  media="(min-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/first-page/team/igor-demianenko/igor-dem-768.jpg    1x,
+                    ./images/first-page/team/igor-demianenko/igor-dem-768@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <img
+                  class="team__image"
+                  srcset="
+                    ./images/first-page/team/igor-demianenko/igor-dem-480.jpg    1x,
+                    ./images/first-page/team/igor-demianenko/igor-dem-480@2x.jpg 2x
+                  "
+                  src="./images/first-page/team/igor-demianenko/igor-dem-480.jpg"
+                  alt="Ігор Дем'яненко"
+                />
+              </picture>
               <div class="team__thump">
                 <h3 class="team__subtitle">Ігор Дем'яненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -278,7 +307,31 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__image" src="./images/first-page/team/img2.jpg" alt="Ольга Рєпіна" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/first-page/team/olga-repina/olga-rep-1600.jpg    1x,
+                    ./images/first-page/team/olga-repina/olga-rep-1600@2x.jpg 2x
+                  "
+                  media="(min-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/first-page/team/olga-repina/olga-rep-768.jpg    1x,
+                    ./images/first-page/team/olga-repina/olga-rep-768@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <img
+                  class="team__image"
+                  srcset="
+                    ./images/first-page/team/olga-repina/olga-rep-480.jpg    1x,
+                    ./images/first-page/team/olga-repina/olga-rep-480@2x.jpg 2x
+                  "
+                  src="./images/first-page/team/olga-repina/olga-rep-480.jpg"
+                  alt="Ольга Рєпіна"
+                />
+              </picture>
               <div class="team__thump">
                 <h3 class="team__subtitle">Ольга Рєпіна</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -315,11 +368,31 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__image"
-                src="./images/first-page/team/img3.jpg"
-                alt="Микола Тарасов"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/first-page/team/mykola-tarasov/mykola-tar-1600.jpg    1x,
+                    ./images/first-page/team/mykola-tarasov/mykola-tar-1600@2x.jpg 2x
+                  "
+                  media="(min-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/first-page/team/mykola-tarasov/mykola-tar-768.jpg    1x,
+                    ./images/first-page/team/mykola-tarasov/mykola-tar-768@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <img
+                  class="team__image"
+                  srcset="
+                    ./images/first-page/team/mykola-tarasov/mykola-tar-480.jpg    1x,
+                    ./images/first-page/team/mykola-tarasov/mykola-tar-480@2x.jpg 2x
+                  "
+                  src="./images/first-page/team/mykola-tarasov/mykola-tar-480.jpg"
+                  alt="Микола Тарасов"
+                />
+              </picture>
               <div class="team__thump">
                 <h3 class="team__subtitle">Микола Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -356,11 +429,31 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__image"
-                src="./images/first-page/team/img4.jpg"
-                alt="Михайло Єрмаков"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/first-page/team/myhailo-ermakov/myhailo-erm-1600.jpg    1x,
+                    ./images/first-page/team/myhailo-ermakov/myhailo-erm-1600@2x.jpg 2x
+                  "
+                  media="(min-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/first-page/team/myhailo-ermakov/myhailo-erm-768.jpg    1x,
+                    ./images/first-page/team/myhailo-ermakov/myhailo-erm-768@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <img
+                  class="team__image"
+                  srcset="
+                    ./images/first-page/team/myhailo-ermakov/myhailo-erm-480.jpg    1x,
+                    ./images/first-page/team/myhailo-ermakov/myhailo-erm-480@2x.jpg 2x
+                  "
+                  src="./images/first-page/team/myhailo-ermakov/myhailo-erm-480.jpg"
+                  alt="Михайло Єрмаков"
+                />
+              </picture>
               <div class="team__thump">
                 <h3 class="team__subtitle">Михайло Єрмаков</h3>
                 <p class="team__text">UI Designer</p>
