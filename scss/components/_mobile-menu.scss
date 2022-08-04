@@ -1,4 +1,6 @@
 .mobile-menu {
+  display: flex;
+  flex-direction: column;
   position: fixed;
   padding: 40px 48px;
   top: 0;
@@ -68,11 +70,14 @@
 
   &__contacts-link--color {
     font-weight: 500;
-    font-size: 34px;
     line-height: 1.17;
     letter-spacing: 0.02em;
 
     color: var(--accent-color);
+
+    @media (min-width: 480px) {
+      font-size: 34px;
+    }
   }
 
   &__social-list {
